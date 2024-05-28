@@ -1,0 +1,79 @@
+.mainContainer {
+    width: 180px;
+    margin: 0 auto;
+  
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .card {
+    margin-top: 40px;
+    position: relative;
+    width: 180px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cardImage {
+    width: 180px;
+    height: 180px;
+  }
+  
+  .bookmarkIcon {
+    position: absolute;
+    background: transparent;
+    top: 5px;
+    left: 0px;
+    width: 30px;
+    height: 30px;
+    cursor:pointer;
+  }
+  
+  .cardDetails {
+    padding: 20px;
+  }
+  
+  .cardTitle {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+  }
+  
+  .cardRating {
+    margin: 0;
+    font-size: 12px;
+    color :black
+  }
+  
+
+  /* .mainContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin:10px;
+  } 
+   */
+  
+ 
+
+   .mainContainer {
+    display: grid;
+    margin-left: -40px;
+    grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+    grid-gap: 55px; /* Adjust gap between cards */
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc; /* Add border for visualization */
+    border-radius: 8px; /* Add border radius for visualization */
+    
+  }
+
+  .noResultsP{
+    text-align: flex-start;
+    width: 100vh;
+    font-size: 20px;
+    margin-top: 20px;
+  }

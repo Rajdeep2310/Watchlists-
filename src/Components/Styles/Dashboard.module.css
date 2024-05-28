@@ -1,0 +1,275 @@
+Sidebar.module.css * {
+  background-color: whitesmoke;
+}
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25%;
+  height: 100%;
+  background-color: whitesmoke;
+  color: black;
+  padding: 20px;
+  box-shadow: 10px 0 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.headers {
+  font-size: 3rem;
+  margin-left: 30px;
+  font-weight: bold;
+  color: red;
+  background-color: whitesmoke;
+}
+
+.home,
+.list {
+  background: whitesmoke;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  font-size: 1rem;
+}
+
+.home {
+  background-color: white;
+  margin-bottom: 20px;
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-align: center;
+  margin-left: 17px;
+  padding: 10px;
+  color:black;
+  border: 2px solid darkred;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border: 2px solid darkred;
+  border-radius: 12px;
+  width: 300px;
+  cursor: pointer;
+}
+
+.home:hover {
+  background-color: red;
+  color: white;
+}
+
+.list {
+  font-size: 1.75rem;
+
+}
+
+.profile {
+  position: absolute;
+  display: flex;
+  bottom: 20px;
+  left: 20px;
+  background-color: whitesmoke;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  height: 3rem;
+}
+
+.profile img {
+  background-color: whitesmoke;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+
+.profile span {
+  position: relative;
+  background-color: whitesmoke;
+  color: black;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+
+
+.searchContainer {
+  background-color: whitesmoke;
+  margin-bottom: 20px;
+}
+
+.searchInput {
+
+  padding: 10px;
+  border: 2px solid darkred;
+  border-radius: 12px;
+  width: 60%;
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+.searchButton {
+  padding: 10px 20px;
+  background-color: red;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.searchButton:hover {
+  background-color: darkred;
+}
+
+/* Sidebar.module.css */
+/* 
+ .profile {
+  position: relative;
+  border:  solid ;
+  display: flex;
+  background-color: whitesmoke;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile img {
+  background-color: whitesmoke;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.profile span {
+  background-color: whitesmoke;
+  vertical-align: middle;
+  color: black; 
+ }  */
+
+.divider {
+  border: 0;
+  border-top: 2px solid #777;
+  margin: 20px 0;
+  /* Adjust margin as needed */
+}
+
+.mainContent {
+  margin-top: 30px;
+  margin-left: 500px;
+  width: 60%;
+  height: 26%;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border: 3px solid darkred;
+  border-radius: 12px;
+}
+
+.mainContent h1 {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.mainContent p {
+  margin: 10px 0;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  /* Full viewport height */
+}
+
+.redTxt {
+  color: red;
+}
+
+.movieSearch {
+  border-radius: 12px;
+  margin-left: -20px;
+  margin-top: 50px;
+  width: 105%;
+  height: 3rem;
+
+}
+
+.searchMovieInput {
+  background: none;
+  border: 3px solid darkred;
+  border-radius: 12px;
+  padding: 10px;
+  width: 805px;
+  margin-right: 10px;
+
+}
+
+.searchMovieButton {
+  padding: 10px 20px;
+  background-color: red;
+  color: #fff;
+  border: 3px solid darkred;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.searchMovieButton:hover {
+  background-color: darkred;
+
+}
+
+.sidebar {
+  position: fixed;
+  /* Set position to fixed */
+  top: 0;
+  left: 0;
+  width: 25%;
+  height: 100%;
+  background-color: whitesmoke;
+  color: black;
+  padding: 20px;
+  box-shadow: 10px 0 10px -5px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  /* Ensure it's above other content */
+  overflow-y: auto;
+  /* Allow vertical scrolling if content exceeds height */
+}
+
+
+
+.movieResults {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.movieCard {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  width: 150px;
+}
+
+.movieCard img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+
+.watchlistButton {
+  font-size: 1.75rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border: 2px solid darkred;
+  border-radius: 12px;
+  width: 300px
+}
+
+.watchlistButton:hover {
+  background-color: red;
+  color: white;
+}
+
+.logOut{
+
+  background: transparent;
+  margin-left: 200px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+
+}
