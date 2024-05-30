@@ -21,7 +21,6 @@ const Auth = () => {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
     if (validateEmail(email)) {
       localStorage.setItem("email", email);
       navigate("/dashboard");
@@ -40,12 +39,13 @@ const Auth = () => {
           placeholder="Enter your email"
           value={email}
           onChange={handleChange}
+          onKeyDown={handleKeyDown}
         />
         <button
           type="submit"
           className={styles.buttonEmail}
           onClick={handleSubmit}
-          onKeyDown={handleKeyDown}
+          
         >
           Submit
         </button>

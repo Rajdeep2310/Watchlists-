@@ -1,4 +1,4 @@
-import bookmarkIcon from "../Assets/bookmark.png"; // Import your bookmark icon image
+import bookmarkIcon from "../Assets/bookmark23.png"; // Import your bookmark icon image
 import bookmarkedIcon from "../Assets/icons8-bookmark-24.png"; // Import your bookmarked icon image
 import styles from "./Styles/Card.module.css"; // Import your Card component styles
 import dummy from "../Assets/dummy.jpg";
